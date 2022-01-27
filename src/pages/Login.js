@@ -1,11 +1,11 @@
 import React from "react";
-import "./../assets/css/login.css";
+import { Button, Col, Row, Spinner } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Link, useHistory, useLocation } from "react-router-dom";
+import bg from '../assets/images/bgCover.png';
+import logBg from '../assets/images/logBg.gif';
 import useContexts from "../hooks/useContexts.js";
-import { Button, Col, Row, Spinner } from "react-bootstrap";
-import bg from '../assets/images/bgCover.png'
-import logBg from '../assets/images/logBg.gif'
+import "./../assets/css/login.css";
 const Login = () => {
   const { userLogin, loading, email, signInUsingGoogle } = useContexts();
   const { register, handleSubmit } = useForm();

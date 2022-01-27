@@ -1,18 +1,18 @@
 import React from "react";
-import { Accordion, Button, Col, Container, FormControl, InputGroup, Row, Spinner } from "react-bootstrap";
+import { Button, Col, Container, FormControl, InputGroup, Row, Spinner } from "react-bootstrap";
+import Bounce from "react-reveal/Bounce";
 import { Link } from "react-router-dom";
+import faq from '../assets/images/faq.jpg';
 import Product from "../components/Product.js";
 import Slider from "../components/Slider.js";
+import Testimonials from "../components/Testimonials.js";
+import useContexts from "../hooks/useContexts.js";
 import useProducts from "../hooks/useProducts.js";
 import "./../assets/css/home.css";
 import collection1 from "./../assets/images/collection/1.jpg";
 import collection2 from "./../assets/images/collection/2.jpg";
 import collection3 from "./../assets/images/collection/3.webp";
 import collection4 from "./../assets/images/collection/4.jpg";
-import Bounce from "react-reveal/Bounce";
-import faq from '../assets/images/faq.jpg'
-import Testimonials from "../components/Testimonials.js";
-import useContexts from "../hooks/useContexts.js";
 const Home = () => {
   const { email, logout, loading, photoURL, displayName } = useContexts();
   const products = useProducts();
